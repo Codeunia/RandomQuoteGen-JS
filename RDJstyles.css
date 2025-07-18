@@ -1,0 +1,59 @@
+body {
+  font-family: "Merriweather";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(
+    135deg,
+    #8e2de2,
+    #4a00e0,
+    #00c3ff,
+    #ffff1c,
+    #ff61a6
+  );
+
+  background-size: 400% 400%;
+  animation: magicBG 15s ease infinite;
+}
+
+.container {
+  border: 2px solid gold;
+  box-shadow: gold 0 0 20px;
+  text-align: center;
+  height: 300px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+#generate-quote {
+  border: none;
+  border-radius: 10px;
+  color: white;
+  background-color: #2ecc71;
+  box-shadow: #27ae60 0 0 20px;
+  box-shadow: grey 0 0 20px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+}
+#generate-quote:hover {
+  background-color: #27ae60;
+  box-shadow: #27ae60 0 0 20px;
+  transform: scale(1.1);
+}
+
+h1 {
+  margin-top: 70px;
+}
+@keyframes magicBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
